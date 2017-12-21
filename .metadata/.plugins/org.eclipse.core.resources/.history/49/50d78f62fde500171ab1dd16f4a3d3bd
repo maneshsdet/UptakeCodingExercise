@@ -1,0 +1,35 @@
+package com.pom.uptake.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.pom.uptake.base.TestBase;
+
+public class ProductsPage  extends TestBase {
+	
+	// Page Factory
+
+		@FindBy(xpath = "//h1[@class = 'hero-heading__subheading']")
+		WebElement ProdcutPagetext;
+		
+		@FindBy(xpath = "//a[@href = 'https://www.uptake.com/']")
+		WebElement HomePageLink;
+		
+
+		// Intializing PageObjects
+		public ProductsPage() {
+			PageFactory.initElements(driver, this);
+		}
+		
+		public String validateProductsText() {
+			System.out.println(ProdcutPagetext.getText());
+			return ProdcutPagetext.getText();
+		}
+		
+		public HomePage ClickUptake() {
+			HomePageLink.click();				
+			return new HomePage();
+		}
+		
+}

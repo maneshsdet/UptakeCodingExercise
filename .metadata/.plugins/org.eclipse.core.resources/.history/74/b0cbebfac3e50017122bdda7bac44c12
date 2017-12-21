@@ -1,0 +1,53 @@
+package com.pom.uptake.Uptake;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.pom.uptake.base.TestBase;
+import com.pom.uptake.pages.HomePage;
+
+public class HomePageTest extends TestBase {
+	HomePage homepage;
+
+	public HomePageTest() {
+		super();
+	}
+
+	@BeforeMethod
+	public void setUp() {
+		try {
+			intialization();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		homepage = new HomePage();
+	}
+
+	@Test
+	public void HomePageTitleTest() {
+		String title = homepage.validateHomePageTitle();
+		Assert.assertEquals(title, "Industrial Analytics for Global Industry | Uptake");
+	}
+	
+	@Test
+	public void linkTest() {
+		homepage.validatelinkText();
+	}
+	
+	@Test
+	public void homepageTest() {
+		homepage.HomePagetext();
+	}
+
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

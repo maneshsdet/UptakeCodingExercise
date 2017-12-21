@@ -1,0 +1,1095 @@
+2017-12-20 12:00:19,272 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-12-20 12:00:49,514 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2017-12-20 12:01:12,265 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\mnall\Uptake\Uptake\pom.xml
+2017-12-20 12:01:13,651 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.collections:google-collections:jar:1.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-12-20 12:01:13,849 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.pom.uptake:Uptake:0.0.1-SNAPSHOT @ C:\Users\mnall\Uptake\Uptake\pom.xml.
+2017-12-20 12:01:14,850 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Uptake/src/main/java
+2017-12-20 12:01:14,860 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Uptake/src/test/java
+2017-12-20 12:01:16,339 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2017-12-20 12:01:18,291 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:01:18,292 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:01:18,295 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:01:18,296 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:01:52,862 [Worker-16] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565) ~[org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574) ~[org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.9.0.v20170207-1454.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.9.0.v20170207-1454.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56) [org.eclipse.core.jobs_3.9.1.v20170714-0547.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Unrecognised tag: 'dependency' (position: START_TAG seen ...s://mvnrepository.com/artifact/org.testng/testng -->\r\n<dependency>... @20:13) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563) ~[org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognised tag: 'dependency' (position: START_TAG seen ...s://mvnrepository.com/artifact/org.testng/testng -->\r\n<dependency>... @20:13) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkUnknownElement(MavenXpp3Reader.java:178) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1402) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2235) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	... 26 common frames omitted
+2017-12-20 12:01:54,290 [Worker-20] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565) ~[org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574) ~[org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.9.0.v20170207-1454.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.9.0.v20170207-1454.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56) [org.eclipse.core.jobs_3.9.1.v20170714-0547.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Unrecognised tag: 'dependency' (position: START_TAG seen ...s://mvnrepository.com/artifact/org.testng/testng -->\r\n<dependency>... @20:13) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563) ~[org.eclipse.m2e.core_1.8.2.20171007-0217.jar:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognised tag: 'dependency' (position: START_TAG seen ...s://mvnrepository.com/artifact/org.testng/testng -->\r\n<dependency>... @20:13) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkUnknownElement(MavenXpp3Reader.java:178) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1402) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2235) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	... 26 common frames omitted
+2017-12-20 12:02:01,400 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.collections:google-collections:jar:1.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-12-20 12:02:01,541 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.pom.uptake:Uptake:0.0.1-SNAPSHOT @ C:\Users\mnall\Uptake\Uptake\pom.xml.
+2017-12-20 12:02:08,699 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.pom
+2017-12-20 12:02:08,699 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.pom
+2017-12-20 12:02:08,756 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.pom
+2017-12-20 12:02:08,768 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.pom
+2017-12-20 12:02:10,374 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.pom
+2017-12-20 12:02:10,380 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.pom
+2017-12-20 12:02:10,429 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.pom
+2017-12-20 12:02:10,539 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.jar
+2017-12-20 12:02:10,548 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.pom
+2017-12-20 12:02:10,625 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.jar
+2017-12-20 12:02:10,761 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.jar
+2017-12-20 12:02:10,808 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.jar
+2017-12-20 12:02:10,865 [Worker-12] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.jar
+2017-12-20 12:02:10,883 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.13.1/testng-6.13.1.jar
+2017-12-20 12:02:10,937 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.jar
+2017-12-20 12:02:11,006 [Worker-13] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.72/jcommander-1.72.jar
+2017-12-20 12:02:12,406 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:12,407 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:02:12,409 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:12,410 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:02:13,628 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:13,629 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:02:13,630 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:13,631 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:02:35,318 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.collections:google-collections:jar:1.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-12-20 12:02:35,437 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.pom.uptake:Uptake:0.0.1-SNAPSHOT @ C:\Users\mnall\Uptake\Uptake\pom.xml.
+2017-12-20 12:02:35,685 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-java/3.8.1/selenium-java-3.8.1.pom
+2017-12-20 12:02:35,794 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-java/3.8.1/selenium-java-3.8.1.pom
+2017-12-20 12:02:35,889 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-chrome-driver/3.8.1/selenium-chrome-driver-3.8.1.pom
+2017-12-20 12:02:36,000 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-chrome-driver/3.8.1/selenium-chrome-driver-3.8.1.pom
+2017-12-20 12:02:36,268 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-edge-driver/3.8.1/selenium-edge-driver-3.8.1.pom
+2017-12-20 12:02:36,323 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-edge-driver/3.8.1/selenium-edge-driver-3.8.1.pom
+2017-12-20 12:02:36,477 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-firefox-driver/3.8.1/selenium-firefox-driver-3.8.1.pom
+2017-12-20 12:02:36,683 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-firefox-driver/3.8.1/selenium-firefox-driver-3.8.1.pom
+2017-12-20 12:02:36,831 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-ie-driver/3.8.1/selenium-ie-driver-3.8.1.pom
+2017-12-20 12:02:36,886 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-ie-driver/3.8.1/selenium-ie-driver-3.8.1.pom
+2017-12-20 12:02:37,146 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-opera-driver/3.8.1/selenium-opera-driver-3.8.1.pom
+2017-12-20 12:02:37,255 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-opera-driver/3.8.1/selenium-opera-driver-3.8.1.pom
+2017-12-20 12:02:37,342 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-safari-driver/3.8.1/selenium-safari-driver-3.8.1.pom
+2017-12-20 12:02:37,462 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-safari-driver/3.8.1/selenium-safari-driver-3.8.1.pom
+2017-12-20 12:02:37,588 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1.pom
+2017-12-20 12:02:37,640 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1.pom
+2017-12-20 12:02:37,955 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-java/3.8.1/selenium-java-3.8.1.jar
+2017-12-20 12:02:38,006 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-java/3.8.1/selenium-java-3.8.1.jar
+2017-12-20 12:02:38,061 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-chrome-driver/3.8.1/selenium-chrome-driver-3.8.1.jar
+2017-12-20 12:02:38,237 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-chrome-driver/3.8.1/selenium-chrome-driver-3.8.1.jar
+2017-12-20 12:02:38,373 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-edge-driver/3.8.1/selenium-edge-driver-3.8.1.jar
+2017-12-20 12:02:38,480 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-edge-driver/3.8.1/selenium-edge-driver-3.8.1.jar
+2017-12-20 12:02:38,560 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-firefox-driver/3.8.1/selenium-firefox-driver-3.8.1.jar
+2017-12-20 12:02:38,889 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-firefox-driver/3.8.1/selenium-firefox-driver-3.8.1.jar
+2017-12-20 12:02:39,044 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-ie-driver/3.8.1/selenium-ie-driver-3.8.1.jar
+2017-12-20 12:02:39,102 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-ie-driver/3.8.1/selenium-ie-driver-3.8.1.jar
+2017-12-20 12:02:39,166 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-opera-driver/3.8.1/selenium-opera-driver-3.8.1.jar
+2017-12-20 12:02:39,232 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-opera-driver/3.8.1/selenium-opera-driver-3.8.1.jar
+2017-12-20 12:02:39,296 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-safari-driver/3.8.1/selenium-safari-driver-3.8.1.jar
+2017-12-20 12:02:39,356 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-safari-driver/3.8.1/selenium-safari-driver-3.8.1.jar
+2017-12-20 12:02:39,414 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1.jar
+2017-12-20 12:02:39,540 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1.jar
+2017-12-20 12:02:41,225 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:41,225 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:02:41,227 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:41,227 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:02:42,909 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:42,909 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:02:42,910 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:42,911 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:02:55,381 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:55,381 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:02:55,383 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:02:55,383 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:03:06,819 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:06,819 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:03:06,821 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:06,821 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:03:30,143 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:30,143 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:03:30,145 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:30,145 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:03:47,114 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:47,115 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:03:47,116 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:47,116 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:03:55,474 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:55,474 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:03:55,476 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:03:55,476 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:04:02,763 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:02,763 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:04:02,765 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:02,765 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:04:08,663 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:08,663 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:04:08,665 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:08,665 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:04:24,500 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:24,500 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:04:24,502 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:24,503 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:04:25,602 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:25,603 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:04:25,604 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:25,604 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:04:47,042 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:47,043 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:04:47,043 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:47,044 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:04:53,190 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:53,190 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:04:53,192 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:04:53,192 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:05:28,835 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:05:28,835 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:05:28,837 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:05:28,837 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:05:34,709 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:05:34,710 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:05:34,710 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:05:34,711 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:05:56,101 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:05:56,101 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:05:56,110 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:05:56,111 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:06:03,167 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:06:03,167 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:06:03,168 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:06:03,168 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 12:06:20,562 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:06:20,562 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 12:06:20,563 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 12:06:20,564 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:04:53,784 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:04:53,785 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:04:53,787 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:04:53,787 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:05:03,451 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:05:03,452 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:05:03,454 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:05:03,455 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:05:39,731 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:05:39,732 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:05:39,733 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:05:39,734 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:07:23,844 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:07:23,844 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:07:23,845 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:07:23,846 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:07:54,198 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:07:54,198 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:07:54,199 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:07:54,199 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:08:17,104 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-12-20 14:08:23,040 [Worker-43] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\mnall\Uptake\Uptake
+2017-12-20 14:08:23,041 [Worker-43] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2017-12-20 14:08:53,142 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:08:53,143 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:08:53,144 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:08:53,145 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:09:04,895 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:04,895 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:09:04,896 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:04,896 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:09:12,033 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:12,035 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:09:12,037 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:12,038 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:09:26,327 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:26,327 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:09:26,328 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:26,328 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:09:27,390 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:27,390 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:09:27,391 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:09:27,391 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:10:45,164 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:10:45,165 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:10:45,166 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:10:45,167 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:11:00,130 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:11:00,131 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:11:00,132 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:11:00,132 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:11:15,440 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-12-20 14:11:15,522 [Worker-40] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\mnall\Uptake\Uptake
+2017-12-20 14:11:15,522 [Worker-40] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2017-12-20 14:15:06,568 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:06,568 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:15:06,569 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:06,570 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:15:07,634 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:07,634 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:15:07,635 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:07,635 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:15:09,327 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:09,327 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:15:09,328 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:09,328 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:15:42,790 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:42,790 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:15:42,792 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:15:42,793 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:17:31,975 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.google.collections:google-collections:jar:1.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2017-12-20 14:17:32,091 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.pom.uptake:Uptake:0.0.1-SNAPSHOT @ C:\Users\mnall\Uptake\Uptake\pom.xml.
+2017-12-20 14:17:32,322 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.9.10/testng-6.9.10.pom
+2017-12-20 14:17:32,416 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.9.10/testng-6.9.10.pom
+2017-12-20 14:17:32,539 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.48/jcommander-1.48.pom
+2017-12-20 14:17:32,601 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.48/jcommander-1.48.pom
+2017-12-20 14:17:33,268 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.9.10/testng-6.9.10.jar
+2017-12-20 14:17:33,651 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/testng/testng/6.9.10/testng-6.9.10.jar
+2017-12-20 14:17:33,722 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.48/jcommander-1.48.jar
+2017-12-20 14:17:33,799 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/com/beust/jcommander/1.48/jcommander-1.48.jar
+2017-12-20 14:17:34,795 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:17:34,795 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:17:34,798 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:17:34,798 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:17:34,969 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-12-20 14:17:36,788 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:17:36,789 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:17:36,790 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:17:36,790 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:17:36,921 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\mnall\Uptake\Uptake
+2017-12-20 14:17:36,922 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2017-12-20 14:20:26,305 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:20:26,306 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:20:26,306 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:20:26,307 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:20:27,482 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:20:27,483 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:20:27,484 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:20:27,486 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:22:41,615 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:22:41,615 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:22:41,616 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:22:41,616 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:24:29,885 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:24:29,886 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:24:29,887 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:24:29,888 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:25:30,000 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:25:30,000 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:25:30,000 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:25:30,001 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:25:55,104 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:25:55,105 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:25:55,107 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:25:55,107 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:26:14,412 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:26:14,412 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:26:14,413 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:26:14,414 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:26:25,044 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:26:25,044 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:26:25,045 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:26:25,045 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 14:26:35,128 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:26:35,128 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 14:26:35,129 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 14:26:35,129 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:28:07,463 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:28:07,464 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:28:07,464 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:28:07,465 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:28:15,416 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:28:15,416 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:28:15,417 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:28:15,417 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:28:57,086 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:28:57,086 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:28:57,087 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:28:57,088 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:30:47,450 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:30:47,450 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:30:47,451 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:30:47,451 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:32:23,260 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:32:23,261 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:32:23,263 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:32:23,264 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:32:43,984 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:32:43,984 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:32:43,985 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:32:43,986 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:32:45,438 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:32:45,439 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:32:45,440 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:32:45,440 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:33:07,031 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:33:07,031 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:33:07,032 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:33:07,032 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:35:47,141 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:35:47,141 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:35:47,142 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:35:47,143 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:36:10,229 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:36:10,229 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:36:10,230 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:36:10,231 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:36:23,254 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:36:23,255 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:36:23,256 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:36:23,256 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:46:52,470 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:46:52,470 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:46:52,471 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:46:52,472 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:47:20,326 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:47:20,327 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:47:20,327 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:47:20,328 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:48:01,200 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:48:01,200 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:48:01,200 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:48:01,201 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:48:26,133 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:48:26,133 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:48:26,134 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:48:26,134 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:49:58,288 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:49:58,289 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:49:58,290 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:49:58,290 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:51:05,808 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:51:05,809 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:51:05,810 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:51:05,811 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:51:13,519 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:51:13,519 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:51:13,520 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:51:13,520 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:52:05,937 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:52:05,938 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:52:05,939 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:52:05,939 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:52:16,159 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:52:16,159 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:52:16,160 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:52:16,161 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:54:02,899 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:02,899 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:54:02,900 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:02,901 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:54:16,467 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:16,467 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:54:16,468 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:16,468 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:54:24,261 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:24,261 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:54:24,262 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:24,262 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 15:54:27,083 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:27,084 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 15:54:27,084 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 15:54:27,085 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:04:56,494 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:04:56,495 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:04:56,495 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:04:56,496 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:05:19,282 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:05:19,282 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:05:19,283 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:05:19,283 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:05:35,023 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:05:35,023 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:05:35,024 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:05:35,024 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:06:22,822 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:06:22,822 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:06:22,823 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:06:22,823 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:07:03,289 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:03,290 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:07:03,290 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:03,291 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:07:17,394 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:17,394 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:07:17,394 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:17,395 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:07:27,799 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:27,800 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:07:27,802 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:27,802 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:07:45,609 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:45,609 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:07:45,612 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:45,613 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:07:46,871 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:46,872 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:07:46,873 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:07:46,874 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:08:14,034 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:08:14,035 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:08:14,035 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:08:14,036 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:09:15,136 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:09:15,137 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:09:15,138 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:09:15,139 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:12:59,209 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:12:59,209 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:12:59,209 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:12:59,210 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:13:34,227 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:13:34,228 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:13:34,229 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:13:34,229 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:13:56,082 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:13:56,083 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:13:56,083 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:13:56,084 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:14:03,182 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:14:03,182 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:14:03,183 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:14:03,185 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:14:04,339 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:14:04,340 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:14:04,340 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:14:04,340 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:14:43,635 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:14:43,636 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:14:43,636 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:14:43,637 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:15:09,354 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:15:09,354 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:15:09,355 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:15:09,355 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:15:31,073 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:15:31,074 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:15:31,075 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:15:31,075 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:17:57,773 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:17:57,773 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:17:57,774 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:17:57,774 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:18:13,153 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:18:13,153 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:18:13,154 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:18:13,154 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:18:29,566 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:18:29,566 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:18:29,567 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:18:29,568 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:18:50,959 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:18:50,960 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:18:50,960 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:18:50,961 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:20:48,536 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:20:48,537 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:20:48,538 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:20:48,538 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:22:16,467 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:22:16,468 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:22:16,468 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:22:16,469 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:24:48,171 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:24:48,171 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:24:48,172 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:24:48,172 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:25:18,009 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:25:18,010 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:25:18,011 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:25:18,011 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:25:24,073 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:25:24,073 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:25:24,074 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:25:24,074 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:26:07,866 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:26:07,867 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:26:07,868 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:26:07,869 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:26:50,009 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:26:50,009 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:26:50,010 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:26:50,010 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:27:18,655 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:27:18,656 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:27:18,656 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:27:18,657 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:34:08,468 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:34:08,468 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:34:08,469 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:34:08,470 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:34:16,872 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:34:16,872 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:34:16,874 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:34:16,874 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:34:29,474 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:34:29,474 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:34:29,475 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:34:29,475 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:39:39,630 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:39:39,631 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:39:39,632 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:39:39,632 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:39:41,535 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:39:41,535 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:39:41,536 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:39:41,536 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 16:39:51,177 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:39:51,178 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 16:39:51,178 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 16:39:51,179 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:07:31,585 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-12-20 19:07:50,731 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:07:50,732 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:07:50,735 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:07:50,735 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:08:12,584 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2017-12-20 19:13:34,270 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:13:34,270 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:13:34,272 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:13:34,273 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:15:54,788 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:15:54,788 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:15:54,790 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:15:54,790 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:16:24,666 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:16:24,667 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:16:24,668 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:16:24,669 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:16:26,338 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:16:26,339 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:16:26,340 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:16:26,341 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:16:34,255 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:16:34,256 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:16:34,257 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:16:34,258 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:17:06,099 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:17:06,100 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:17:06,101 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:17:06,102 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:20:10,867 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:20:10,867 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:20:10,911 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:20:10,914 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:20:22,443 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:20:22,444 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:20:22,446 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:20:22,447 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:21:27,582 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:21:27,583 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:21:27,584 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:21:27,585 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:22:32,232 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:22:32,232 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:22:32,234 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:22:32,234 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:24:14,715 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:24:14,715 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:24:14,720 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:24:14,721 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:26:51,158 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:26:51,158 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:26:51,160 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:26:51,161 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:28:02,868 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:28:02,869 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:28:02,870 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:28:02,871 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:32:24,118 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:32:24,118 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:32:24,120 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:32:24,120 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:35:46,145 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:35:46,146 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:35:46,149 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:35:46,150 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:35:59,089 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:35:59,089 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:35:59,091 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:35:59,091 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:36:07,348 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:36:07,348 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:36:07,349 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:36:07,349 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:43:48,989 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:43:48,989 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:43:48,990 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:43:48,991 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:44:44,828 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:44:44,828 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:44:44,830 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:44:44,830 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:44:46,176 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:44:46,177 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:44:46,178 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:44:46,178 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:48:56,385 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:48:56,385 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:48:56,387 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:48:56,387 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:49:02,495 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:49:02,496 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:49:02,497 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:49:02,498 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:49:07,387 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:49:07,387 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:49:07,389 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:49:07,389 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:52:19,407 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:52:19,408 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:52:19,410 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:52:19,410 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:54:19,124 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:54:19,124 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:54:19,126 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:54:19,126 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:55:20,162 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:55:20,162 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:55:20,165 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:55:20,166 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:55:33,561 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:55:33,562 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:55:33,563 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:55:33,564 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:57:07,769 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:07,769 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:57:07,772 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:07,772 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:57:23,325 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:23,325 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:57:23,327 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:23,327 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:57:26,888 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:26,889 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:57:26,891 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:26,892 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:57:34,972 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:34,973 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:57:34,974 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:57:34,975 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:59:18,963 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:59:18,963 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:59:18,965 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:59:18,965 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 19:59:58,729 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:59:58,729 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 19:59:58,731 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 19:59:58,731 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:00:07,331 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:00:07,332 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:00:07,333 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:00:07,334 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:00:31,561 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:00:31,561 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:00:31,563 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:00:31,564 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:00:52,487 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:00:52,488 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:00:52,489 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:00:52,489 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:01:12,058 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:01:12,059 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:01:12,060 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:01:12,061 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:02:36,512 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:02:36,512 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:02:36,514 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:02:36,515 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:04:45,047 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:04:45,047 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:04:45,048 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:04:45,049 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:04:53,805 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:04:53,806 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:04:53,808 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:04:53,808 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:07:47,331 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:07:47,332 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:07:47,333 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:07:47,333 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:09:07,904 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:09:07,905 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:09:07,908 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:09:07,909 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:13:43,103 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:13:43,103 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:13:43,104 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:13:43,104 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:16:39,200 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:16:39,200 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:16:39,202 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:16:39,203 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:16:50,143 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:16:50,143 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:16:50,145 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:16:50,145 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:18:11,685 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:18:11,685 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:18:11,687 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:18:11,687 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:18:16,228 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:18:16,228 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:18:16,230 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:18:16,230 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:23:51,231 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:23:51,232 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:23:51,233 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:23:51,234 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:24:18,270 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:24:18,270 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:24:18,271 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:24:18,272 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:24:22,391 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:24:22,391 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:24:22,392 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:24:22,393 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:25:33,356 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:25:33,356 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:25:33,358 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:25:33,358 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:35:20,506 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:35:20,507 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:35:20,509 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:35:20,510 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:35:24,890 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:35:24,891 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:35:24,891 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:35:24,892 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:35:44,876 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:35:44,876 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:35:44,877 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:35:44,877 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:36:38,406 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:36:38,406 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:36:38,408 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:36:38,409 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:37:44,418 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:37:44,419 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:37:44,420 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:37:44,420 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:37:58,905 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:37:58,905 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:37:58,906 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:37:58,906 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:41:03,921 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:41:03,922 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:41:03,923 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:41:03,923 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:42:59,575 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:42:59,576 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:42:59,578 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:42:59,579 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:45:59,079 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:45:59,079 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:45:59,082 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:45:59,082 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:46:07,704 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:46:07,704 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:46:07,706 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:46:07,707 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:48:07,799 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:48:07,799 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:48:07,802 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:48:07,802 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:48:48,407 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:48:48,408 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:48:48,409 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:48:48,409 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:49:22,074 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:49:22,074 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:49:22,075 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:49:22,076 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:49:33,673 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:49:33,674 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:49:33,674 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:49:33,675 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:50:29,813 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:29,813 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:50:29,814 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:29,814 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:50:33,425 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:33,425 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:50:33,427 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:33,428 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:50:46,563 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:46,563 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:50:46,564 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:46,565 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:50:56,209 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:56,209 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:50:56,210 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:50:56,210 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:51:07,618 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:51:07,619 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:51:07,620 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:51:07,620 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:51:11,140 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:51:11,140 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:51:11,141 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:51:11,141 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:52:47,691 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:52:47,691 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:52:47,693 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:52:47,693 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:52:55,425 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:52:55,425 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:52:55,427 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:52:55,427 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:54:22,801 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:54:22,801 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:54:22,802 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:54:22,802 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:54:43,081 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:54:43,081 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:54:43,082 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:54:43,082 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 20:58:37,528 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:58:37,528 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 20:58:37,529 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 20:58:37,530 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:10:15,681 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:10:15,681 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:10:15,682 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:10:15,682 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:11:20,965 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:11:20,965 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:11:20,966 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:11:20,967 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:11:26,438 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:11:26,439 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:11:26,439 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:11:26,440 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:12:25,003 [Worker-52] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/com/google/guava/guava/23.0/guava-23.0-sources.jar
+2017-12-20 21:12:25,964 [Worker-52] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/com/google/guava/guava/23.0/guava-23.0-sources.jar
+2017-12-20 21:12:26,281 [Worker-52] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava:23.0
+2017-12-20 21:12:26,780 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:12:26,780 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:12:26,782 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:12:26,782 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:12:56,473 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1-sources.jar
+2017-12-20 21:12:56,615 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory.allstate.com/artifactory/libs-release/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1-sources.jar
+2017-12-20 21:12:56,690 [Worker-46] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.seleniumhq.selenium:selenium-support:3.8.1
+2017-12-20 21:12:57,092 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:12:57,092 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:12:57,093 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:12:57,093 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:13:43,154 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:13:43,154 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:13:43,155 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:13:43,156 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:13:47,458 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:13:47,458 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:13:47,459 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:13:47,459 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:14:01,665 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:14:01,665 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:14:01,665 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:14:01,666 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:14:10,663 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:14:10,663 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:14:10,664 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:14:10,664 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:16:50,354 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:16:50,355 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:16:50,355 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:16:50,355 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:17:07,492 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:17:07,492 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:17:07,493 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:17:07,494 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:17:49,938 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:17:49,938 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:17:49,939 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:17:49,939 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:18:01,664 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:18:01,665 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:18:01,666 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:18:01,666 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:23:36,552 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:23:36,552 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:23:36,553 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:23:36,553 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:23:46,920 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:23:46,921 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:23:46,922 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:23:46,923 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:24:00,487 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:24:00,487 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:24:00,488 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:24:00,488 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:24:06,511 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:24:06,512 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:24:06,512 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:24:06,513 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:25:37,415 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:25:37,415 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:25:37,416 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:25:37,416 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:25:50,018 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:25:50,019 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:25:50,020 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:25:50,020 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:26:33,942 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:26:33,942 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:26:33,942 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:26:33,943 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:28:15,715 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:28:15,716 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:28:15,717 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:28:15,717 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:33:53,052 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:33:53,052 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:33:53,054 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:33:53,054 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:39:31,400 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:39:31,400 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:39:31,401 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:39:31,401 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:39:56,012 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:39:56,013 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:39:56,013 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:39:56,013 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:40:19,348 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:40:19,348 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:40:19,349 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:40:19,349 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:40:28,078 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:40:28,078 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:40:28,079 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:40:28,079 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:43:37,476 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:43:37,476 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:43:37,477 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:43:37,477 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:47:20,357 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:47:20,357 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:47:20,358 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:47:20,358 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:47:49,832 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:47:49,833 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:47:49,833 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:47:49,834 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:48:00,758 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:00,758 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:48:00,759 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:00,760 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:48:03,899 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:03,899 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:48:03,900 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:03,900 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:48:10,011 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:10,011 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:48:10,012 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:10,012 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:48:50,032 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:50,033 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:48:50,033 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:50,033 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:48:52,213 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:52,213 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:48:52,214 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:48:52,214 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 21:59:09,341 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:59:09,341 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 21:59:09,343 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 21:59:09,343 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:02:24,897 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:02:24,897 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:02:24,898 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:02:24,898 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:05:43,629 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:05:43,630 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:05:43,631 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:05:43,631 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:06:06,717 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:06:06,717 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:06:06,718 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:06:06,719 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:06:09,386 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:06:09,386 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:06:09,387 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:06:09,387 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:18:07,909 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:18:07,910 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:18:07,910 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:18:07,911 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:18:15,556 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:18:15,556 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:18:15,557 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:18:15,557 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:18:40,990 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:18:40,990 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:18:40,991 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:18:40,991 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:20:49,078 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:20:49,079 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:20:49,080 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:20:49,080 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:21:43,184 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:21:43,185 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:21:43,185 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:21:43,185 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:22:52,970 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:22:52,971 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:22:52,972 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:22:52,972 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources
+2017-12-20 22:25:29,117 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:25:29,118 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\main\resources
+2017-12-20 22:25:29,118 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-20 22:25:29,118 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\mnall\Uptake\Uptake\src\test\resources

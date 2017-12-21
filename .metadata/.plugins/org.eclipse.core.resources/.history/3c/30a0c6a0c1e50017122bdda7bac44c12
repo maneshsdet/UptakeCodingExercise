@@ -1,0 +1,8 @@
+package com.pom.uptake.Uptake;
+
+public class Snippet {
+	public static void main(String[] args) {
+		HomePageTest.java
+	}
+}
+

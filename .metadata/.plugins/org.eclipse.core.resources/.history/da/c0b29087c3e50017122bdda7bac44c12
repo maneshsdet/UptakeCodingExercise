@@ -1,0 +1,34 @@
+package com.pom.uptake.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.pom.uptake.base.TestBase;
+
+public class HomePage extends TestBase {
+
+	// Page Factory
+	@FindBy(linkText = "Put Your Data to Work")
+	WebElement linkText;
+
+	@FindBy(xpath = "//h1[@class = 'hero-heading__subheading']")
+	WebElement homepagetext;
+
+	// Intializing PageObjects
+	public HomePage() {
+		PageFactory.initElements(driver, this);
+	}
+
+	public String validateHomePageTitle() {
+		return driver.getTitle();
+	}
+
+	public boolean validatelinkText() {
+		return linkText.isDisplayed();
+	}
+
+	public void HomePagetext() {
+		// assertEquals(homepagetext.getText(), "UPTAKE PRODUCTS");
+	}
+}

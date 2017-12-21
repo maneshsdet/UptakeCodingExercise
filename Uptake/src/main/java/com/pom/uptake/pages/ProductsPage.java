@@ -1,0 +1,44 @@
+package com.pom.uptake.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.pom.uptake.base.TestBase;
+
+public class ProductsPage  extends TestBase {
+	WebDriverWait wait = new WebDriverWait(driver,30);
+	
+	// Page Factory
+
+		@FindBy(xpath = "//h1[@class = 'hero-heading__subheading']")
+		WebElement ProdcutPagetext;
+		
+		@FindBy(xpath = "//a[@href = 'https://www.uptake.com/']")
+		WebElement HomePageLink;		
+
+		// Intializing PageObjects
+		public ProductsPage() {
+			PageFactory.initElements(driver, this);
+		}
+		
+	    public void waitForVisibility() throws Error{
+	           wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@class,'btn__text') and contains(text(), 'Get a Demo')]")));
+
+	    }
+	    
+	    
+		public String validateProductsText() {
+			System.out.println(ProdcutPagetext.getText());
+			return ProdcutPagetext.getText();
+		}
+		
+		public HomePage ClickUptake() {
+			HomePageLink.click();				
+			return new HomePage();
+		}
+		
+}

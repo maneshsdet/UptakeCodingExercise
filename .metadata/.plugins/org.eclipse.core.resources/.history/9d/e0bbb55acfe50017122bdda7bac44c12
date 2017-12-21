@@ -1,0 +1,8 @@
+package com.pom.uptake.pages;
+
+import com.pom.uptake.base.TestBase;
+
+public class ProductsPage  extends TestBase {
+	
+
+}
