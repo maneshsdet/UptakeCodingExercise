@@ -1,10 +1,8 @@
 package com.pom.uptake.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pom.uptake.base.TestBase;
@@ -14,10 +12,14 @@ public class HomePage extends TestBase {
 
 	// Page Factory
 	@FindBy(xpath = "//h1[@class = 'hero-heading__subheading']")
-	WebElement homepagetext;
+	WebElement Homepagetext;
 	
 	@FindBy(linkText = "PRODUCTS")
 	WebElement ProductLink;
+	
+	@FindBy(xpath = "//span[contains(@class,'btn__text') and contains(text(), 'Put Your Data to Work')]")
+	public WebElement HomepageButton;
+	
 
 	
 	// Intializing PageObjects
@@ -29,21 +31,16 @@ public class HomePage extends TestBase {
 		return driver.getTitle();
 	}
 
-	public void waitForVisibility() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@class,'btn__text') and contains(text(), 'Put Your Data to Work')]")));
-	}
 	public String validateUptakeProductstext() {
-		return homepagetext.getText();
+		return Homepagetext.getText();
 	}
 	
 	public ProductsPage ClickProduct() {
 		ProductLink.click();
-		
+		isElementPresent(HomepageButton, 5);
 		return new ProductsPage();
 		
 	}
-
-		// TODO Auto-generated method stub
 		
 	}
 

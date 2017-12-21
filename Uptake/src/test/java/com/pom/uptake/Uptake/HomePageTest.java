@@ -1,9 +1,6 @@
 package com.pom.uptake.Uptake;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +9,6 @@ import org.testng.annotations.Test;
 import com.pom.uptake.base.TestBase;
 import com.pom.uptake.pages.HomePage;
 import com.pom.uptake.pages.ProductsPage;
-import com.pom.uptake.util.Testutil;
 
 public class HomePageTest extends TestBase {
 	HomePage homepage;
@@ -31,7 +27,6 @@ public class HomePageTest extends TestBase {
 		}
 		homepage = new HomePage();
 		productpage = homepage.ClickProduct();
-		productpage.waitForVisibility();
 	}
 	
 	

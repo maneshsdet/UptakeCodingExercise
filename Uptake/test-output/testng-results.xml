@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="example suite 1" duration-ms="37488" started-at="2017-12-21T04:26:00Z" finished-at="2017-12-21T04:26:37Z">
+  <suite name="Uptake Coding Suite" duration-ms="26837" started-at="2017-12-21T16:32:39Z" finished-at="2017-12-21T16:33:06Z">
     <groups>
     </groups>
-    <test name="Regression suite 1" duration-ms="37488" started-at="2017-12-21T04:26:00Z" finished-at="2017-12-21T04:26:37Z">
+    <test name="Uptake Coding Suite 1" duration-ms="26837" started-at="2017-12-21T16:32:39Z" finished-at="2017-12-21T16:33:06Z">
       <class name="com.pom.uptake.Uptake.ProductPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.uptake.Uptake.ProductPageTest@224edc67]" name="setUp" is-config="true" duration-ms="16664" started-at="2017-12-20T22:26:20Z" finished-at="2017-12-20T22:26:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.uptake.Uptake.ProductPageTest@59fa1d9b]" name="setUp" is-config="true" duration-ms="12349" started-at="2017-12-21T10:32:53Z" finished-at="2017-12-21T10:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUptakeProducttextTest()[pri:1, instance:com.pom.uptake.Uptake.ProductPageTest@224edc67]" name="verifyUptakeProducttextTest" duration-ms="56" started-at="2017-12-20T22:26:36Z" finished-at="2017-12-20T22:26:36Z">
+        <test-method status="PASS" signature="verifyUptakeProducttextTest()[pri:1, instance:com.pom.uptake.Uptake.ProductPageTest@59fa1d9b]" name="verifyUptakeProducttextTest" duration-ms="53" started-at="2017-12-21T10:33:05Z" finished-at="2017-12-21T10:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUptakeProducttextTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pom.uptake.Uptake.ProductPageTest@224edc67]" name="tearDown" is-config="true" duration-ms="912" started-at="2017-12-20T22:26:36Z" finished-at="2017-12-20T22:26:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pom.uptake.Uptake.ProductPageTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="789" started-at="2017-12-21T10:33:05Z" finished-at="2017-12-21T10:33:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.pom.uptake.Uptake.ProductPageTest -->
       <class name="com.pom.uptake.Uptake.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.uptake.Uptake.HomePageTest@4c70fda8]" name="setUp" is-config="true" duration-ms="18971" started-at="2017-12-20T22:26:00Z" finished-at="2017-12-20T22:26:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.uptake.Uptake.HomePageTest@d8355a8]" name="setUp" is-config="true" duration-ms="12592" started-at="2017-12-21T10:32:39Z" finished-at="2017-12-21T10:32:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPRODUCTStextTest()[pri:1, instance:com.pom.uptake.Uptake.HomePageTest@4c70fda8]" name="verifyPRODUCTStextTest" duration-ms="125" started-at="2017-12-20T22:26:19Z" finished-at="2017-12-20T22:26:19Z">
+        <test-method status="PASS" signature="verifyPRODUCTStextTest()[pri:1, instance:com.pom.uptake.Uptake.HomePageTest@d8355a8]" name="verifyPRODUCTStextTest" duration-ms="50" started-at="2017-12-21T10:32:52Z" finished-at="2017-12-21T10:32:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPRODUCTStextTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pom.uptake.Uptake.HomePageTest@4c70fda8]" name="tearDown" is-config="true" duration-ms="733" started-at="2017-12-20T22:26:19Z" finished-at="2017-12-20T22:26:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pom.uptake.Uptake.HomePageTest@d8355a8]" name="tearDown" is-config="true" duration-ms="979" started-at="2017-12-21T10:32:52Z" finished-at="2017-12-21T10:32:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.pom.uptake.Uptake.HomePageTest -->
-    </test> <!-- Regression suite 1 -->
-  </suite> <!-- example suite 1 -->
+    </test> <!-- Uptake Coding Suite 1 -->
+  </suite> <!-- Uptake Coding Suite -->
 </testng-results>

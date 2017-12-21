@@ -28,9 +28,7 @@ public class ProductPageTest extends TestBase {
 		}
 		homepage = new HomePage();
 		productpage = homepage.ClickProduct();
-		productpage.waitForVisibility();
 		homepage = productpage.ClickUptake();
-		homepage.waitForVisibility();
 	}
 
 	@Test(priority =1)
@@ -38,8 +36,7 @@ public class ProductPageTest extends TestBase {
 		String UptakeProductstext = homepage.validateUptakeProductstext();
 		Assert.assertEquals(UptakeProductstext, "UPTAKE PRODUCTS");
 	}
-	
- 
+
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

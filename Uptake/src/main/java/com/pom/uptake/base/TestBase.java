@@ -7,10 +7,12 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pom.uptake.util.Testutil;
@@ -44,7 +46,7 @@ public class TestBase {
 		} else if (browserType.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:/Users/mnall/Desktop/Selenium Projects/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
-			 options.addArguments("--disable-extensions");
+			 options.setExperimentalOption("useAutomationExtension", false);
 			driver = new ChromeDriver(options);
 		} else if (browserType.equals("IE")) {
 			driver = new InternetExplorerDriver();
@@ -55,5 +57,15 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(Testutil.Page_Load_Timeout, TimeUnit.SECONDS);
 		// Launch Url
 		driver.get(prop.getProperty("url"));
+	}
+	
+	public static boolean isElementPresent(WebElement elementName, int timeout){
+        try{
+            WebDriverWait wait = new WebDriverWait(driver, timeout);
+            wait.until(ExpectedConditions.visibilityOf(elementName));
+            return true;
+        }catch(Exception e){
+            return false;
+        }
 	}
 }
